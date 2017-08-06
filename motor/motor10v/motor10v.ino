@@ -8,12 +8,12 @@ void setup() {
 }
 
 void loop() {
-  for(i=60; i<=158; i++){
+  for(i=60; i<=120; i++){
     analogWrite(MOTOR, i);
     Serial.println(i);
     delay(500);
   }
-  for(i=158; i>=60; i--){
+  for(i=120; i>=60; i--){
     analogWrite(MOTOR, i);
     Serial.println(i);
     delay(500);
